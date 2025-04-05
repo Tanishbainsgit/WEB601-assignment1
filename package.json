@@ -1,0 +1,35 @@
+{
+  "name": "web601-assignment1",
+  "version": "1.0.0",
+  "description": "Books API for WEB601 Assignment 1 using Express.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanishbainsgit/WEB601-assignment1.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "API",
+    "Books",
+    "WEB601"
+  ],
+  "author": "Tanish Bains",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanishbainsgit/WEB601-assignment1/issues"
+  },
+  "homepage": "https://github.com/Tanishbainsgit/WEB601-assignment1#readme",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "body-parse": "^0.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

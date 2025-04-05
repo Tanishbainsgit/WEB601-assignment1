@@ -1,0 +1,9 @@
+// Not used in code directly, but can be referred for consistency
+module.exports = {
+  id: "string",
+  title: "string",
+  author: "string",
+  publishedYear: "number",
+  genre: "string",
+  available: "boolean"
+};
