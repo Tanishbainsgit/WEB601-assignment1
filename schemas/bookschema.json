@@ -1,9 +1,12 @@
-// Not used in code directly, but can be referred for consistency
-module.exports = {
-  id: "string",
-  title: "string",
-  author: "string",
-  publishedYear: "number",
-  genre: "string",
-  available: "boolean"
-};
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["title", "author", "publishedYear", "genre", "available"],
+  "properties": {
+    "title": { "type": "string" },
+    "author": { "type": "string" },
+    "publishedYear": { "type": "number" },
+    "genre": { "type": "string" },
+    "available": { "type": "boolean" }
+  }
+}

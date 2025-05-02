@@ -1,7 +1,14 @@
-module.exports = function validateBook(req, res, next) {
-  const { title, author, publishedYear, genre } = req.body;
-  if (!title || !author || !publishedYear || !genre) {
-    return res.status(400).json({ message: "Missing required fields" });
+const Ajv = require("ajv");
+const ajv = new Ajv();
+const schema = require("../schemas/bookschema.json");
+
+const validateBook = (req, res, next) => {
+  const validate = ajv.compile(schema);
+  const valid = validate(req.body);
+  if (!valid) {
+    return res.status(400).json({ errors: validate.errors });
   }
   next();
 };
+
+module.exports = validateBook;
